@@ -121,7 +121,7 @@ const Products = () => {
         ))}
       </div>
 
-      <div className="w-full grid md:grid-cols-4 grid-cols-2 gap-7 md:px-[2rem] px-[2rem] container">
+      <div className="w-full grid md:grid-cols-4 grid-cols-2 gap-7 md:px-[2rem] px-[rem] container">
         {products.length > 0 ? (
           products.map((product) => {
             const imageUrl = `https://api.timbu.cloud/images/${product.photos[0]?.url}` || 'https://via.placeholder.com/150';
