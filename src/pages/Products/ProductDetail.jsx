@@ -35,12 +35,12 @@ const Product = () => {
   const imageUrl = `https://api.timbu.cloud/images/${product.photos[0]?.url}` || 'https://via.placeholder.com/150';
 
   return (
-    <div className="product-detail-container md:px-[5rem] py-[4rem] px-[2rem] md:flex grid justify-center items-center">
+    <div className="product-detail-container md:px-[5rem] py-[4rem] md:gap-[5rem] px-[2rem] md:flex grid justify-center items-center">
       <div className='flex flex-col justify-center'>
         <img src={imageUrl} alt={`Image of ${product.name}`} className="md:w-[20rem] w-full" />
         <h1 className="text-2xl font-bold">{product.name}</h1>
-        <h2 className="text-xl text-gray-700">{product.unique_id}</h2>
-        <p className="mt-4">{product.description || 'No description available'}</p>
+        <h2 className="text-xl text-gray-700 mt-3">{product.unique_id}</h2>
+        <p className="mt-4 ">{product.description || 'No description available'}</p>
         <h4 className="text-2xl font-semibold mt-3 mb-2">N160,004</h4>
         {/* <h4 className="text-2xl font-semibold">N{product.current_price[0]?.NGN[0] || 'Price not available'}</h4> */}
         <div className="flex items-center">
